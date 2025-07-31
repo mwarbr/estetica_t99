@@ -1,0 +1,43 @@
+/*----------------------------------------
+    CSS Mobile - First Projeto Estética
+-----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Regra de Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Roboto, Arial, Helvetica;
+}
+
+.esconde {
+    display: none;
+}
+
+/* Formulário de Novidades */
+#cadastro_news {
+    padding: 1rem;
+    background: linear-gradient(45deg, #fff 10%, #f5f5f5 60%);
+}
+
+#cadastro_news h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 130%;
+    margin-bottom: 1rem;
+}
+
+#cadastro_news input[type=email] {
+    width: 68%;
+    height: 3rem;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    border: solid 0.01rem #333;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

@@ -43,6 +43,14 @@ Adicionando a Margem de Lucro = 30,00/hora * 1,3 = 40,00/hora
 --
 Adicionar se for o caso os Impostos = 40,00 * 1,15
 
+## ✅ Tarefas 
+
+| A Fazer    | Fazendo              | Feito                  |
+|------------|----------------------|------------------------|
+| [ ] Montar o front end CTA (Call To Action - Chamada à ação) |  |  |
+|            | [ ] Montar Wireframe |                        |
+|            |                      |[✅] Montar orçamento  | 
+|            |                      |[✅] Montar contrato   |
 
 
  
