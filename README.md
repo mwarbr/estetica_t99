@@ -52,6 +52,32 @@ Adicionar se for o caso os Impostos = 40,00 * 1,15
 |            |                      |[✅] Montar orçamento  | 
 |            |                      |[✅] Montar contrato   |
 
+## Landing Page com captação de Leads - R$ 1200,00 à R$ 3500,00
 
- 
+São campos onde os clientes se cadastram para receber descontos, novidades, etc.
+
+## Definir a tecnologia do Sistema
+- Sistema Web R$ 8.000,00 | App Android / iOs R$ 45.000,00
+- HTML + CSS e JS - frameworks REACT.js | Bulma | Bootstrap
+- PHP + mysql - 10,00/mês | Python com Flask + R$ 60,00
+- mysql | PostgreSQL | Oracle | DBII
+
+## Comandos Docker Compose
+
+| Descrição | Comando |
+|------|-----|
+| Criar e Iniciar os containers | `docker compose up -d --build` |
+| Parar containers | `docker stop numeroContainer`|
+| Remover o container | `docker rm numeroContainer`|
+
+## Algoritmo - coleta de e-mails (leads)
+
+- Preenche o campo e-mail(obrigatório)
+- Confirmar a aceitação dos termos (obrigatório)
+- Envia os dados para o PHP
+- PHP cadastra no DB
+
+
+
+
 
