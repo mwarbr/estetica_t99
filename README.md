@@ -36,11 +36,11 @@ Criar um sistema web/mobile de agendamento e controle de clientes e processo par
 
 **Obs:** Usar de 1 a 2 horas por ponto ( 2h pleno | Jr 4h ). <br>
 Valor da sua hora: Jr R$ 25,00 | Pleno R$ 50,00 | Sênior R$ 80,00
---
+
 Média de Mercado: Salário do Jr R$ 3500,00 / 120h = R$ 30,00/hora
---
+
 Adicionando a Margem de Lucro = 30,00/hora * 1,3 = 40,00/hora
---
+
 Adicionar se for o caso os Impostos = 40,00 * 1,15
 
 ## ✅ Tarefas 
