@@ -69,6 +69,11 @@ São campos onde os clientes se cadastram para receber descontos, novidades, etc
 | Criar e Iniciar os containers | `docker compose up -d --build` |
 | Parar containers | `docker stop numeroContainer`|
 | Remover o container | `docker rm numeroContainer`|
+| Ver os containers rodando/Desligados | `docker ps -a` |
+| Acessando o terminal do container | `docker compose run nome/ID bash` |
+| Instala pacotes no Debian/Ubuntu | `apt install nome` |
+| Instala pacotes no Alpine | `apk add nome` |
+
 
 ## Algoritmo - coleta de e-mails (leads)
 

@@ -2,11 +2,13 @@ services:
   web:
     image: php:8.2-apache
     build:
-      context: ./web
+      context: ./
+      dockerfile: ./web/Dockerfile.laravel
     ports:
       - 5000:80
     volumes:
-      - ./src:/var/www/html
+      - ./laravel:/var/www/html/laravel
+      - ./src:/var/www/html/src
 
   db:
     image: mysql:8 # imagem do docker hub escolhida

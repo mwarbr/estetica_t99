@@ -1,0 +1,16 @@
+# Configurações de Instalação do Servidor Apache
+FROM php:8.2-apache
+
+# Atualizando o OS Container
+RUN apt update && apt upgrade -y \
+    nano \
+    git 
+
+# Baixe e instale o Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    
+# Instalação de extensões PHP necessárias
+RUN docker-php-ext-install pdo pdo_mysql
+
+# define o diretório raiz da aplicação
+WORKDIR /var/www/html
