@@ -73,6 +73,10 @@ São campos onde os clientes se cadastram para receber descontos, novidades, etc
 | Acessando o terminal do container | `docker compose run nome/ID bash` |
 | Instala pacotes no Debian/Ubuntu | `apt install nome` |
 | Instala pacotes no Alpine | `apk add nome` |
+| **Comandos do Composer** |  |
+| Executando o composer | `docker compose exec web composer --version` |
+| Criando o projeto Laravel | `docker compose exec web composer create-project laravel/laravel .`  |
+| Descobrir seu ID | `echo $UID` ou `id -u` |
 
 
 ## Algoritmo - coleta de e-mails (leads)

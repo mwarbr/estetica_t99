@@ -1,6 +1,5 @@
 services:
   web:
-    image: php:8.2-apache
     build:
       context: ./
       dockerfile: ./web/Dockerfile.laravel
@@ -41,12 +40,12 @@ services:
   # https://ashkiani.github.io/sql-injection-playground/
   # Container para testes de segurança http://127.0.0.1:7443/WebGoat
   # usuario e senha: guest
-  webgoat:
-    image: webgoat/webgoat
-    container_name: webgoat
-    restart: unless-stopped
-    ports:
-      - "7443:8080"
+  # webgoat:
+  #   image: webgoat/webgoat
+  #   container_name: webgoat
+  #   restart: unless-stopped
+  #   ports:
+  #     - "7443:8080"
     
 
 volumes:
