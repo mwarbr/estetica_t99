@@ -1,7 +1,8 @@
 services:
+  
   web:
     build:
-      context: ./
+      context: .
       dockerfile: ./web/Dockerfile.laravel
     ports:
       - 5000:80
