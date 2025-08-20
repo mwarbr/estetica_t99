@@ -15,7 +15,8 @@
     <main class=" bg-primary py-4 px-3 d-flex flex-row " >
 
         <section class=" col-4 " > Menu </section>
-        <section class=" col-8 " > Conteúdos </section>    
+        <section class=" col-8 " > Conteúdos </section> 
+           
     </main>
     
     
