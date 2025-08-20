@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\Route;
 
 # define uma rota - url - caminho
 Route::get('/', function () {
-    #return view('home2');
-    # return "<h1> Home 2 </h1>";
-    return redirect("https://www.sp.senac.br");
+    return view('home');
+});
+
+Route::get( '/painel', function(){
+    return "<h1>Título</h1>";
 });
