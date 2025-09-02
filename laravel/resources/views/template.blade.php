@@ -124,19 +124,19 @@
 
             <nav class=" w-100 ">
                 
-                <a class=" nav-link w-100 p-2 mb-2 " href="{{ config('app.url') }}">
+                <a class=" nav-link w-100 p-2 mb-2 " href="{{ config('app.url') }}/painel">
                     <span class="h4 ps-md-3 fw-normal " >
                         <i class=" bi bi-speedometer2 me-3 "></i> <span class="d-none d-md-inline-block" > Painel </span>
                     </span>
                 </a>
 
-                <a class=" nav-link w-100 p-2 mb-2 " href="{{ config('app.url') }}">
+                <a class=" nav-link w-100 p-2 mb-2 " href="{{ config('app.url') }}/usuarios">
                     <span class="h4 ps-md-3 fw-normal " >
                         <i class=" bi bi-person-circle me-3 "></i> <span class="d-none d-md-inline-block" > Usuários </span>
                     </span>
                 </a>
 
-                <a class=" nav-link w-100 p-2 mb-2 " href="{{ config('app.url') }}">
+                <a class=" nav-link w-100 p-2 mb-2 " href="{{ config('app.url') }}/novidades">
                     <span class="h4 ps-md-3 fw-normal " >
                         <i class=" bi bi-newspaper me-3 "></i> <span class="d-none d-md-inline-block" >Novidades</span>
                     </span>

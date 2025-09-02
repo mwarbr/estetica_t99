@@ -2,6 +2,6 @@
 
 @section('conteudos')
 
-    Conteúdos dessa página.
+    <h1> Painel Resumo </h1>
     
 @endsection
