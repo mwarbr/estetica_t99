@@ -1,1 +1,1 @@
-<h1> Cadastrode Novidades </h1>
+<h1> Cadastro de Novidades </h1>
