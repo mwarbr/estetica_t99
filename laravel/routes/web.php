@@ -19,3 +19,5 @@ Route::get( '/novidades', function(){
 Route::get( '/sobre', function(){
     return view('sobre');
 });
+
+Route::get();

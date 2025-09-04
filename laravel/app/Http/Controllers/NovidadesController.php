@@ -7,6 +7,25 @@ use Illuminate\Http\Request;
 
 class NovidadesController extends Controller
 {
+
+    # método construtor - __construct()
+    private function __construct(){
+        # criar o nosso cadastro inicial
+        # acesso direto à classe estática Novidades
+        Novidades::create([
+            'email' => 'maycon.aguerra@senacsp.edu.br',
+            'validado' => '1',
+            'opt_out' => 'sim',
+            'motivo_saida' => 'Não quero mais.',
+        ]);
+
+    }
+
+    # cadastra dados de teste (fake)
+    private function dadosTeste(){
+
+    }
+
     /**
      * Display a listing of the resource.
      */
