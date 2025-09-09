@@ -4,25 +4,47 @@ namespace App\Http\Controllers;
 
 use App\Models\Novidades;
 use Illuminate\Http\Request;
+use Faker\Factory as Faker;
 
 class NovidadesController extends Controller
 {
 
     # método construtor - __construct()
-    private function __construct(){
-        # criar o nosso cadastro inicial
-        # acesso direto à classe estática Novidades
-        Novidades::create([
-            'email' => 'maycon.aguerra@senacsp.edu.br',
-            'validado' => '1',
-            'opt_out' => 'sim',
-            'motivo_saida' => 'Não quero mais.',
-        ]);
+    public function __construct(){
+        
+        if( app()->environment('local') )
+        {
+            # criar o nosso cadastro inicial
+            # acesso direto à classe estática Novidades
+            Novidades::create([
+                'email' => 'maycon.aguerra@senacsp.edu.br',
+                'validado' => '1',
+                'opt_out' => 'sim',
+                'motivo_saida' => 'Não quero mais.',
+                'data_criacao' => date('Y-m-d h:i:s'),
+            ]);
+
+            # chamada do método desta classe
+            $this->dadosTeste();
+        }
 
     }
 
     # cadastra dados de teste (fake)
-    private function dadosTeste(){
+    public function dadosTeste(){
+
+        # instancia a classe Faker()
+        $faker = Faker::create();
+        
+        # realizar 10 cadastros por vez
+        for ( $i=0; $i < 10; $i++ ){
+
+            Novidades::create([
+                'email' => $faker->unique()->safeEmail(),
+                'data_criacao' => date('Y-m-d h:i:s'),
+            ]);
+
+        }
 
     }
 

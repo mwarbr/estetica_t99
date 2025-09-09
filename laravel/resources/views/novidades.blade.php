@@ -1,1 +1,7 @@
-<h1> Cadastro de Novidades </h1>
+@extends('template')
+
+@section('conteudos')
+<h2> Cadastro de Novidades </h2>
+
+
+@endsection

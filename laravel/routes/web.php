@@ -2,6 +2,7 @@
 
 # importações de Classes do Laravel
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NovidadesController;
 
 # define uma rota - url - caminho
 Route::get('/', function () {
@@ -20,4 +21,4 @@ Route::get( '/sobre', function(){
     return view('sobre');
 });
 
-Route::get();
+Route::get('/dev/faker', [NovidadesController::class, 'dadosTeste' ] );

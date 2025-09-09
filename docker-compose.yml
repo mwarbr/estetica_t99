@@ -24,7 +24,7 @@ services:
     volumes: # pastas espelhadas no container
         - mysql:/var/lib/mysql
     ports: # portas de acesso
-        - "3308:3306"
+        - "3309:3306"
 
   # PHPmyAdmin - Permite ver e manipular o banco de dados
   phpmyadmin:

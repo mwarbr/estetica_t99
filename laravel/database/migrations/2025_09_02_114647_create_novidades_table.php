@@ -35,7 +35,7 @@ return new class extends Migration
             $table->string('email', 254 )->unique(); # email único e obrigatório
             $table->integer('validado')->default(0);
             $table->enum('opt_out', ['sim', 'não'])->default('sim');
-            $table->dateTime('data_criacao')->timestamps();
+            $table->dateTime('data_criacao')->nullable();
             $table->string('motivo_saida', 150 )->nullable(); # opcional
             $table->timestamps();
         });

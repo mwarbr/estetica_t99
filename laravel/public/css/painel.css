@@ -1,0 +1,75 @@
+/* Aplica variáveis na raiz do html */
+:root {
+    --corTexto: #333;
+    --bs-primary-rgb: 255, 255, 255;
+    --bs-secondary-rgb: 198, 147, 248; /*64, 198, 239;*/
+    --bs-light-rgb: 255, 255, 255;
+    --bs-dark-rgb: 121, 32, 176;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    color: rgb( var( --bs-dark-rgb ) );
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.conteudos {
+    width: calc( ( 100vw / 12 * 10 ) - 2.6rem );
+    background-color: rgba(var(--bs-secondary-rgb), 0.3) !important;
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.4);
+    border: solid 0.1rem rgba(var(--bs-secondary-rgb), 1 );
+    padding: 3rem;
+}
+
+.conteudos h2
+{
+    margin-bottom: 3rem; 
+}
+
+.menu_lateral
+{
+    max-width: 12.5rem;
+}
+
+@media screen and ( max-width: 576px )
+{
+
+    .menu_lateral
+    {
+        display: flex;
+        justify-content: start;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn_menu
+    {
+        aspect-ratio: 1; /* define para quadrado*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1rem 0.2rem;
+    }
+
+    .abre
+    {
+        width: 25rem;
+    }
+
+    .mostra
+    {
+        display: inline-block !important;
+    }
+
+    .btn:active,
+    .btn:hover
+    {
+        background: transparent !important;
+    }
+
+}
+

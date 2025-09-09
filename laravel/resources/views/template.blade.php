@@ -9,78 +9,63 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
+    <link href="{{asset('css/painel.css')}}" rel="stylesheet" >
+
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
     <style>
 
-        /* Aplica variáveis na raiz do html */
-        :root {
-            --corTexto: #333;
-            --bs-primary-rgb: 255, 255, 255;
-            --bs-secondary-rgb: 198, 147, 248; /*64, 198, 239;*/
-            --bs-light-rgb: 255, 255, 255;
-            --bs-dark-rgb: 121, 32, 176;
+        
+
+        /* Tabela dinâmica 
+        .table {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        * {
-            box-sizing: border-box;
-            max-width: 100%;
-            color: rgb( var( --bs-dark-rgb ) );
+        thead.table-dark th {
+            background-color: #0d6efd !important; /* Azul Bootstrap * /
+            color: #fff !important;
+            text-align: center;
         }
 
-        img{
-            width: 100%;
-            max-width: 100%;
+        tbody tr:hover {
+            background-color: #f1f5ff; /* leve destaque no hover * /
+            transition: background 0.3s ease;
         }
 
-        .conteudos {
-            width: calc( ( 100vw / 12 * 10 ) - 2.6rem );
-            background-color: rgba(var(--bs-secondary-rgb), 0.3) !important;
-            box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.4);
-            border: solid 0.1rem rgba(var(--bs-secondary-rgb), 1 );
+        td {
+            vertical-align: middle;
+            text-align: center;
         }
 
-        .menu_lateral
-        {
-            max-width: 12.5rem;
+        /* Customização dos botões de paginação * /
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            border-radius: 0.3rem;
+            margin: 0 2px;
+            padding: 5px 10px;
+            border: 1px solid #dee2e6;
+            background-color: #fff;
+            color: #0d6efd !important;
         }
 
-        @media screen and ( max-width: 576px )
-        {
-
-            .menu_lateral
-            {
-                display: flex;
-                justify-content: start;
-                transition: all 0.3s ease-in-out;
-            }
-
-            .btn_menu
-            {
-                aspect-ratio: 1; /* define para quadrado*/
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0.1rem 0.2rem;
-            }
-
-            .abre
-            {
-                width: 25rem;
-            }
-
-            .mostra
-            {
-                display: inline-block !important;
-            }
-
-            .btn:active,
-            .btn:hover
-            {
-                background: transparent !important;
-            }
-
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            background-color: #0d6efd !important;
+            color: #fff !important;
+            border: none;
         }
+
+        .dataTables_wrapper .dataTables_filter input {
+            border-radius: 0.3rem;
+            border: 1px solid #ced4da;
+            padding: 5px 10px;
+            margin-left: 0.5rem;
+        }*/
+
+        
 
 
 
